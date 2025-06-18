@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to right, #c1ff92, #bff170);
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    min-height: 100vh;
+}
+
+.counterBox {
+    background-color: aliceblue;
+    border-radius: 1rem ;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.display {
+    justify-self: center;
+    font-size: 50px;
+    margin-top: 1rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: 1rem;
+}
+
+.increment button {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+.reset button {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+.decrement button {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+}
