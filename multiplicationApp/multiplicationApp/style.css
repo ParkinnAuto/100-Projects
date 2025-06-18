@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.multiplicationAppContainer {
+    background-color: aliceblue;
+    padding: 50px;
+    align-items: center;
+    justify-items: center;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.question {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.firstNum, .secondnUm {
+    padding: 0 8px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.answerContainer {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.answer {
+    width: 300px;
+    padding: 15px;
+    font-size: 24px;
+    text-align: center;
+    border: 3px solid #84fab0; 
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.answer:focus {
+    border-color: #8fd3f4;
+    box-shadow:
+        inset 0 2px 5px rgba(0, 0, 0, 0.1),
+        0 0 0 3px rgba(141, 211, 244, 0.3);;
+}
+
+.answer::placeholder {
+    color: #aaa;
+    font-size: 18px;
+}
+
+.submitContainer {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.submit {
+    width:330px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    background-color: green;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.submit:hover {
+    color: white;
+    background-color: rgb(1, 80, 1);
+}
+
+.scoreContainer {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
