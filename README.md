@@ -1,0 +1,1 @@
+Welcome to my Vanilla HTML, CSS & JavaScript projects repository! This collection includes small to medium-sized web projects built purely with no frameworks or libraries—just core web technologies. Some projects also integrate with third-party APIs for dynamic functionality.
