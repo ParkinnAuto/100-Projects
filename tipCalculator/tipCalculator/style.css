@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.tipCalculatorContainer {
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    justify-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    padding: 10px;
+    font-size: 30px;
+}
+
+.description {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.billAmount {
+    padding: 10px;
+}
+
+.percentageAmount {
+    padding: 10px;
+}
+
+h3 {
+    color: #34495e;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #2c3e50;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.calculate {
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(155, 241, 26);
+    color: black;
+    cursor: pointer;
+    border: black;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.calculate:hover {
+    background-color: rgb(93, 154, 1);
+    color: white;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.result {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
