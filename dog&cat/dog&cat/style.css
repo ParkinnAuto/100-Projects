@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ffe0f0, #e0f7ff);
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #ff69b4;
+  text-shadow: 1px 1px 2px #ffc0cb;
+}
+
+.selection {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.species,
+.select {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #ffb6c1;
+  border-radius: 10px;
+  outline: none;
+  background-color: #fff0f5;
+  transition: 0.3s;
+}
+
+.species:focus,
+.select:focus {
+  border-color: #87cefa;
+  box-shadow: 0 0 8px #87cefa;
+}
+
+.btn {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #87cefa;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(135, 206, 250, 0.4);
+}
+
+.btn:hover {
+  background-color: #ffb6c1;
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(255, 182, 193, 0.5);
+}
+
+.display {
+  margin-top: 25px;
+  text-align: left;
+  background-color: #fff0f8;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.display img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.display h2 {
+  font-size: 22px;
+  color: #ff69b4;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.display ul {
+  padding-left: 20px;
+  list-style: disc;
+  color: #333;
+  line-height: 1.6;
+  max-height: 250px; /* กำหนดความสูงสูงสุด */
+  overflow-y: auto;  /* ให้แสดง scroll bar ถ้าเกิน */
+  padding-right: 10px; /* กัน text ไปชน scrollbar */
+}
+
+.display ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+.display ul::-webkit-scrollbar-track {
+  background: #ffe4ec;
+  border-radius: 10px;
+}
+
+.display ul::-webkit-scrollbar-thumb {
+  background-color: #ffb6c1;
+  border-radius: 10px;
+}
+
+.display li {
+  margin-bottom: 8px;
+  background-color: #ffe4ec;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
