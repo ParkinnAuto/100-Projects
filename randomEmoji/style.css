@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #4a6baf;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.outputContainer {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.outputContainer img {
+    font-size: 5rem; /* สำหรับ emoji ที่แสดงเป็น text */
+    margin-bottom: 1rem;
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.emojiName {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #4a6baf;
+    margin-top: 1rem;
+    background-color: #e9f0ff;
+    padding: 0.5rem;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.btn {
+    background-color: #4a6baf;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(74, 107, 175, 0.3);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.btn:hover {
+    background-color: #3a5a9f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(74, 107, 175, 0.4);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(74, 107, 175, 0.3);
+}
+
+/* Animation สำหรับเมื่อเปลี่ยน emoji */
+@keyframes bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.bounce {
+    animation: bounce 0.5s ease;
+}
