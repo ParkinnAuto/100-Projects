@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loan Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="inputContianer">
+      <h1>Loan Calculator</h1>
+      <h3>Loan Amount $</h3>
+      <input type="number" min="0" class="inputAmount" />
+
+      <h3>Interest Rate %</h3>
+      <input type="number" min="0" class="inputRate" />
+
+      <h3>Month to Pay</h3>
+      <input type="number" min="0" class="inputMonth" />
+
+      <br /><br />
+      <button class="btn">Calculate</button>
+    </div>
+
+    <div class="outputContianer">
+      <h2>Monthly Payment: </h2>
+      <h2 class="output"></h2>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
