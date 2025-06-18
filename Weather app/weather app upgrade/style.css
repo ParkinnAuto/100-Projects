@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, #add8e6, #4682b4);;
+}
+
+.container {
+    background-color: rgb(198, 220, 239);
+    padding: 50px;
+    border-radius: 10px;
+    width: 20%;
+}
+
+.title {
+    display: flex;
+    padding: 10px;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+
+.searcing {
+    padding: 20px;
+}
+
+.searchBox {
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.btn {
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
