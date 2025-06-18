@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #ffa07a, #ffb6c1);
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.input {
+  flex: 1;
+  min-width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  padding: 0 15px;
+  border: 2px solid #000000;
+  font-size: 16px;
+  transition: 0.3s ease;
+  background-color: #fff0f5;
+}
+
+.input:focus {
+  border-color: #71ff24;
+  box-shadow: 0 0 8px rgba(255, 105, 180, 0.4);
+  background-color: #ffffff;
+}
+
+.btn {
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  background-color: #ff1493;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.displayData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.card {
+  background-color: #ffe4e1;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2);
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.card img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  margin-bottom: 5px;
+  font-size: 24px;
+  color: #db005b;
+}
+
+.card p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.stat-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.stat-list li {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #444;
+  text-align: left;
+}
